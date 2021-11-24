@@ -13,8 +13,7 @@ output [N-1:0] Read_Data_1_o,
 output [N-1:0] Read_Data_2_o
 );
 
-wire [N-1:0] q,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,q17,q18,q19,q20,q21,q22,q23,q24,q25,q26,q27,q28,q29, 
-q30,q31,out, enable;
+wire [N-1:0] q,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,q17,q18,q19,q20,q21,q22,q23,q24,q25,q26,q27,q28,q29,q30,q31,out, enable;
 decoder #(32) dec1(.in(Write_Register_i),.out(out));
 
 mux #(32) mux1 (.regAdr(q), .regAdr1(q1), .regAdr2(q2), .regAdr3(q3), .regAdr4(q4), .regAdr5(q5), .regAdr6(q6), .regAdr7(q7), .regAdr8(q8), .regAdr9(q9), .regAdr10(q10), .regAdr11(q11),

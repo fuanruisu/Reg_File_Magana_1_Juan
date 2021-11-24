@@ -1,7 +1,4 @@
-module mux #(parameter WIDTH = 32)(
-input  regAdr, regAdr1, regAdr2, regAdr3, regAdr4, regAdr5, regAdr6, regAdr7, regAdr8, regAdr9, regAdr10, regAdr11,
-input regAdr12, regAdr13, regAdr14, regAdr15, regAdr16, regAdr17, regAdr18, regAdr19, regAdr20, regAdr21, regAdr22,
-input regAdr23, regAdr24, regAdr25, regAdr26, regAdr27, regAdr28, regAdr29, regAdr30, regAdr31,
+module mux #(parameter WIDTH = 32)(input [WIDTH-1:0] regAdr, regAdr1, regAdr2, regAdr3, regAdr4, regAdr5, regAdr6, regAdr7, regAdr8, regAdr9, regAdr10, regAdr11, regAdr12, regAdr13, regAdr14, regAdr15, regAdr16, regAdr17, regAdr18, regAdr19, regAdr20, regAdr21, regAdr22, regAdr23, regAdr24, regAdr25, regAdr26, regAdr27, regAdr28, regAdr29, regAdr30, regAdr31,
 input [$clog2(WIDTH)-1:0] sel,
 output reg [WIDTH-1:0] regOut);
 
